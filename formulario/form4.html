@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio de Formulario 4</title>
+
+
+    <script>
+        function porcentaje(){
+            let valor = parseFloat(document.porcentajeForm.entrada.value);
+            let resultadoCuadrado = Math.pow(valor, 2);
+            let resultadoCubo = Math.pow(valor,3);
+
+            document.writeln(`El cuadrado de ${valor} es ${resultadoCuadrado}.
+                            <br>El cubo de ${valor} es ${resultadoCubo}`)
+            
+        }
+
+    </script>
 </head>
 <body>
+    <form name="porcentajeForm">
+        Introduzca un valor: <input type="text" size="10" name="entrada">
     
+        <input type="button" value="Pulsa aquí" onclick="porcentaje()" />
+    </form>
 </body>
 </html>

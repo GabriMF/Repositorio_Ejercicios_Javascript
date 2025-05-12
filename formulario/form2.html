@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio de Formulario 2</title>
+
+
+    <script>
+        function porcentaje(){
+            let valor = parseFloat(document.porcentajeForm.entrada.value);
+            let resultado = valor* 0.10;
+
+            document.writeln(`El 10% de ${valor} es ${resultado}`)
+        }
+
+    </script>
 </head>
 <body>
+    <form name="porcentajeForm">
+        Introduzca un valor: <input type="text" size="10" name="entrada">
     
+        <input type="button" value="Pulsa aquí" onclick="porcentaje()" />
+    </form>
 </body>
 </html>

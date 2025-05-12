@@ -6,6 +6,20 @@
     <title>Ejercicio de Formulario 8</title>
 </head>
 <body>
-    
+    <script>
+        function conversor(){
+            let pasaraCelsius = (grado) => {return Celsius = (grado-32)*0.5556};
+            let fahrenheit = document.formGrados.entrada.value;
+
+            var result = pasaraCelsius(fahrenheit);
+            alert(`${document.getElementById("salida").innerHTML = fahrenheit} grados Fahrenheit son ${document.getElementById("salida").innerHTML = result} grados Celsius`);
+        }
+    </script>
+    <form name="formGrados">
+        Introduce los grados: <input type="text" size="10" name="entrada"/>
+
+        <input type="button" name="B1" value="Ejecuta" onclick="conversor()" />
+    </form>
+    <div id ="salida"></div>
 </body>
 </html>
