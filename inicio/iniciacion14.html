@@ -6,6 +6,29 @@
     <title>Ejercicio de iniciación 14</title>
 </head>
 <body>
-    
+<script language="javascript">
+    {
+        var num;
+
+        do {
+            let dato = prompt('Introduce un número:','');
+            num = parseInt(dato);
+
+            if (!isNaN(num)) {
+                document.write(`El número introducido es ${num} </br>`);
+            } else {
+                document.write(`Entrada no válida </br>`);
+            }
+
+        } while (num !== 7);
+
+        document.write( `</br><h2>
+                            Fin del programa.
+                            Introdujiste el número 7.
+                         </h2>`);
+
+        document.write (`</br>Último número introducido es ${num}`);
+    }
+    </script>
 </body>
 </html>
